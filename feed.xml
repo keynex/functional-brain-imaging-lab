@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Functional Brain Imaging Lab — News</title>
-    <link>https://brainimaginlab.github.io/functional-brain-imaging-lab/</link>
+    <link>https://keynex.github.io/functional-brain-imaging-lab/</link>
     <description>Latest news from the Functional Brain Imaging Lab at Sunnybrook Research Institute</description>
     <language>en-ca</language>
-    <atom:link href="https://brainimaginlab.github.io/functional-brain-imaging-lab/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://keynex.github.io/functional-brain-imaging-lab/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>New Publication in eLife</title>
       <description>Matthew W Rozak et al. published "A deep learning pipeline for mapping in situ network-level neurovascular coupling in multi-photon fluorescence microscopy" in eLife.</description>
