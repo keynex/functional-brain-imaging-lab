@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Laboratoire d'imagerie cérébrale fonctionnelle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Publications de recherche en vedette et base de données complète du Laboratoire d'imagerie cérébrale fonctionnelle.">
+
+    <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Publications | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Publications de recherche en vedette et base de données complète du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://brainimaginlab.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="alternate" type="application/rss+xml" title="fBIL News" href="../feed.xml">
+    <meta name="view-transition" content="same-origin">
+</head>
+<body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
+    <div id="preloader">
+        <img src="../images/logo.gif" alt="Loading..." class="preloader-logo">
+        <span class="preloader-text">Loading</span>
+    </div>
+    <div id="scroll-progress"></div>
+    <div class="noise-overlay"></div>
+    <div id="mouse-spotlight"></div>
+    <canvas id="neural-bg"></canvas>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.gif" alt="fBIL" class="logo-img">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Basculer la navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="equipe.html" data-i18n="nav.people">People</a>
+                <a href="recherche.html" data-i18n="nav.research">Research</a>
+                <a href="publications.html" class="active" data-i18n="nav.publications">Publications</a>
+                <a href="installations.html" data-i18n="nav.facilities">Facilities</a>
+                <a href="nouvelles.html" data-i18n="nav.news">News</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
+                <a href="../publications.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Header -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/publications/highlighted-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
+            <div class="container">
+                <h1 style="color: white; margin-bottom: 1rem;" data-i18n="publications.featured">Publications en vedette</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Découvrez les découvertes scientifiques clés et les innovations méthodologiques de notre équipe.</p>
+            </div>
+        </section>
+
+        <!-- Highlighted Publications -->
+        <section class="section">
+            <div class="container">
+                <div class="highlighted-pubs">
+                    
+                    <!-- Pub 1: Rozak eLife 2026 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">eLife &bull; 2026</div>
+                        <h3>A Deep Learning Pipeline for Mapping In Situ Network-Level Neurovascular Coupling in Multi-Photon Fluorescence Microscopy</h3>
+                        <p class="pub-highlight-authors">Matthew W Rozak, Adrienne Dorr, Margaret M Koletar, Maged Goubran, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Functional hyperemia is a well-established hallmark of healthy brain function, wherein local neural activity drives a rapid, spatially targeted increase in blood flow. Though a detailed, mechanistic understanding of neurovascular coupling has remained elusive, mesoscale in vivo imaging of neural and vascular dynamics has offered key insights. Here, we introduce a deep learning pipeline for automated, scalable mapping of neurovascular coupling across cortical networks using simultaneous two-photon calcium imaging and intrinsic optical signal imaging of hemodynamics through a chronic cranial window in awake mice.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/rozak-elife-2026-fig1.jpg" alt="Deep Learning Pipeline Overview">
+                                    <figcaption>Fig 1: Overview of the deep learning pipeline for neurovascular coupling analysis.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/rozak-elife-2026-fig2.jpg" alt="Network-Level NVC Maps">
+                                    <figcaption>Fig 2: Network-level neurovascular coupling maps across cortical regions.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.7554/eLife.95525" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 2: Vila Imaging Neuroscience 2026 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Imaging Neuroscience &bull; 2026</div>
+                        <h3>Parametrizing Alternating Current Stimulation for Neuromodulation</h3>
+                        <p class="pub-highlight-authors">Monica Bell Vila, Andrea Trevisiol, Margaret M Koletar, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> The clinical use of alternating current stimulation (ACS) has been confounded by inconsistent outcomes. To address this, we integrated ACS with concurrent intracerebral electrophysiology and two-photon fluorescence microscopy in rats to characterize the parameter space of ACS-driven neuromodulation. We systematically varied stimulation frequency, amplitude, and duration while simultaneously recording local field potentials, neuronal spiking, and microvascular hemodynamics.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/vila-imagneurosci-2026-fig1.jpg" alt="ACS Setup and Electrophysiology">
+                                    <figcaption>Fig 1: Experimental setup for concurrent ACS and intracerebral recording.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1162/IMAG.a.1066" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 3: Dorr JCBFM 2026 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Journal of Cerebral Blood Flow &amp; Metabolism &bull; 2026</div>
+                        <h3>Persistent Dysmorphology and Dysfunction of the Brain Microvasculature Following Repeated Trauma</h3>
+                        <p class="pub-highlight-authors">Adrienne Dorr, James R Mester, Paolo Bazzigaluppi, Margaret M Koletar, Tina L Beckett, Matthew Burke, JoAnne McLaurin, John G Sled, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Mild traumatic brain injury typically produces no abnormalities on neuroimaging at the time of the injury. We used in vivo two-photon fluorescence microscopy to longitudinally track cortical microvascular structure and function in mice subjected to repeated mild closed-head injury, revealing persistent dysmorphology and dysfunction of the microvasculature that outlasts the acute injury phase and may underlie chronic post-concussion symptoms.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/dorr-jcbfm-2026-fig1.jpg" alt="Microvascular Dysmorphology">
+                                    <figcaption>Fig 1: Longitudinal tracking of microvascular structure after repeated mTBI.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/dorr-jcbfm-2026-fig2.jpg" alt="Vascular Dysfunction">
+                                    <figcaption>Fig 2: Persistent microvascular dysfunction quantification.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1177/0271678X251400242" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 4: Chen bioRxiv 2025 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">bioRxiv (Preprint) &bull; 2025</div>
+                        <h3>Stable Neuronal Representations to Repeated Stimulation Underlie Cognitive Resilience in Alzheimer's Disease Pathology</h3>
+                        <p class="pub-highlight-authors">Keying Chen, Emma Pineau, Margaret Koletar, Andrea Trevisiol, Jack Simiao He, Mary Hill, Maged Goubran, John Sled, JoAnne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> While Alzheimer's Disease (AD) typically triggers cognitive decline, some individuals with significant AD pathology maintain normal cognition into late life. We used cognitive testing to identify cognitively resilient 13-month-old TgF344-AD rats, followed by Neuropixels recording from 8500 neurons during repeated somatosensory stimulation. Cognitively resilient TgAD rats recruited fewer neurons yet displayed more stable neuronal representations during repeated stimulations, with reduced excitatory spike burstiness and a distinct pattern of functional synaptic connectivity.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/chen-biorxiv-2025-fig1.jpg" alt="Cognitive Resilience Design">
+                                    <figcaption>Fig 1: Experimental design for cognitive resilience assessment.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/chen-biorxiv-2025-fig3.jpg" alt="Neuronal Stability Analysis">
+                                    <figcaption>Fig 3: Neuronal representation stability across repeated stimulation.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.64898/2025.12.05.692431" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 5: Tan Brain Comm 2025 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Brain Communications &bull; 2025</div>
+                        <h3>Stepwise Connectivity of the Entorhinal Cortex Along Connectomic Gradients in Alzheimer's Disease</h3>
+                        <p class="pub-highlight-authors">Jazlynn Xiu Min Tan, Min Su Kang, Yi-Hsuan Yeh, Gleb Bezgin, Firoza Z Lussier, Bojana Stefanovic, and Maged Goubran</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> The entorhinal cortex is one of the earliest sites of tau tangle deposition in Alzheimer's disease. We mapped the stepwise connectivity of the entorhinal cortex along principal connectomic gradients, revealing how tau pathology may propagate through structurally connected brain networks. Our findings provide a connectivity-based framework for understanding the spatiotemporal progression of AD neurodegeneration.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/tan-braincomm-2025-fig1.jpg" alt="Entorhinal Connectivity Gradients">
+                                    <figcaption>Graphical abstract: Entorhinal cortex connectivity and AD pathology.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/tan-braincomm-2025-fig2.jpg" alt="Stepwise Connectivity Maps">
+                                    <figcaption>Fig 1: Stepwise connectivity maps along principal gradients.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1093/braincomms/fcaf399" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 6: Trevisiol Theranostics 2025 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Theranostics &bull; 2025</div>
+                        <h3>Deep Brain Stimulation-Induced Normalization of Hippocampal Synchrony in a Transgenic Rat Model of Alzheimer's Disease</h3>
+                        <p class="pub-highlight-authors">Andrea Trevisiol, Tina Beckett, Monica Bell Vila, Mary Hill, Joanne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Alzheimer's disease (AD) is characterized by disrupted neural network dynamics and neuronal loss. Deep brain stimulation (DBS) may restore network function. We used 16-month-old TgF344-AD and NTg rats to investigate hippocampal neuronal activity across a range of DBS parameters. With increasing DBS frequency and amplitude, hippocampal power and phase-amplitude coupling rose in all rats. TgAD rats showed attenuated power but increased PAC responses to DBS compared to NTgs, providing a foundation for tailoring DBS parameters to compensate for distinct neuronal deficits in established AD.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/trevisiol-theranostics-2025-fig1.jpg" alt="DBS Experimental Setup">
+                                    <figcaption>Fig 1: DBS experimental setup with dual-shank multielectrode array.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/trevisiol-theranostics-2025-fig3.jpg" alt="Hippocampal PAC">
+                                    <figcaption>Fig 3: Phase-amplitude coupling responses to DBS parameters.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.7150/thno.110292" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 7: Almanza Alz & Dem 2025 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Alzheimer's &amp; Dementia &bull; 2025</div>
+                        <h3>High-Caloric Intake Rescues Early Symptomatic AD-Induced Hippocampal Neurovascular Coupling Deficits</h3>
+                        <p class="pub-highlight-authors">Dustin Loren V Almanza, Andrea Trevisiol, Margaret M Koletar, Aaron Y Lai, Jessica A Ribeiro, Mary E Hill, Greg J Stanisz, JoAnne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Alzheimer's disease (AD) involves progressive hippocampal dysfunction and atrophy. This study examined the effects of a high-carbohydrate, high-fat (HCHF) diet in 12-month-old TgF344-AD rats. CHOW-fed TgAD rats showed reduced hippocampal cerebral blood flow, CBF changes spread, and neuronal power responses to somatosensory stimulation; all of these deficits were improved on the HCHF diet. The transiently improved neurovascular and electrophysiological metrics may be a manifestation of metabolically dysregulated AD brain benefitting from increased metabolite availability.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/almanza-alzdem-2025-fig1.jpg" alt="pCASL-MRI Setup">
+                                    <figcaption>Fig 1: pCASL-MRI functional hyperemia assessment in TgF344-AD rats.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/almanza-alzdem-2025-fig2.jpg" alt="Hippocampal CBF Results">
+                                    <figcaption>Fig 2: Hippocampal CBF rescue with HCHF diet in symptomatic AD.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1002/alz.70708" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 8: Attarpour Nature Methods 2025 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Nature Methods &bull; 2025</div>
+                        <h3>A Deep Learning Pipeline for Three-Dimensional Brain-Wide Mapping of Axonal Connectivity at Single-Axon Resolution</h3>
+                        <p class="pub-highlight-authors">Ahmadreza Attarpour, Misha Raffiee, Tony Xu, Jonas Osmann, Shruti Patel, Fengqing Yu, Braedyn Au, Andrew Clappison, Mahdi Biparva, Rui Zhu, Ailey Crow, Barsin Eshaghi Gharagoz, Matthew Rozak, Isabelle Aubert, JoAnne McLaurin, Karl Deisseroth, Bojana Stefanovic, and Maged Goubran</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Teravoxel-scale, cellular-resolution images of cleared rodent brains acquired with light sheet fluorescence microscopy present an opportunity for brain-wide mapping of axonal connectivity at single-axon resolution. We introduce MAPL3, an end-to-end pipeline that integrates self-supervised learning with an innovative deep architecture to capture local and global brain-wide axonal projections. MAPL3 enables subject- and population-level quantitative laminar analysis and outperforms state-of-the-art methods.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/attarpour-natmethods-2025-fig1.jpg" alt="MAPL3 Pipeline">
+                                    <figcaption>Fig 1: MAPL3 pipeline architecture for brain-wide axonal mapping.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/attarpour-natmethods-2025-fig2.jpg" alt="Single-Axon Connectome">
+                                    <figcaption>Fig 2: Single-axon resolution connectome mapping results.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1038/s41592-024-02583-1" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 9: Almanza Theranostics 2024 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">Theranostics &bull; 2024</div>
+                        <h3>High Caloric Intake Improves Neuronal Metabolism and Functional Hyperemia in a Rat Model of Early AD Pathology</h3>
+                        <p class="pub-highlight-authors">Dustin Loren V Almanza, Margaret M Koletar, Aaron Y Lai, Wilfred W Lam, Lewis Joo, Mary E Hill, Greg J Stanisz, JoAnne McLaurin, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> While obesity has been linked to both increased and decreased rate of cognitive decline in Alzheimer's Disease (AD) patients, there is no consensus on the interaction between obesity and AD. The TgF344-AD rat model was used to investigate the effects of high carbohydrate, high fat (HCHF) diet on brain glucose metabolism and hemodynamics. In presymptomatic AD, HCHF exerted detrimental effects; in contrast, HCHF consumption was beneficial in established AD, resolving the AD-progression associated attenuation in hippocampal glucose uptake and functional hyperemia.
+                            </div>
+                            <div class="pub-highlight-gallery">
+                                <figure>
+                                    <img src="../images/publications/almanza-theranostics-2024-fig1.jpg" alt="Experimental Design">
+                                    <figcaption>Fig 1: CEST-MRI and ASL-MRI experimental design and diet timeline.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../images/publications/almanza-theranostics-2024-fig3.jpg" alt="Glucose Metabolism Results">
+                                    <figcaption>Fig 3: Hippocampal glucose metabolism and perfusion changes.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.7150/thno.98793" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                    <!-- Pub 10: Mester NeuroImage 2024 -->
+                    <div class="pub-highlight-card">
+                        <div class="pub-highlight-meta">NeuroImage &bull; 2024</div>
+                        <h3>Network Response of Brain Microvasculature to Neuronal Stimulation</h3>
+                        <p class="pub-highlight-authors">James R Mester, Paolo Bazzigaluppi, Adrienne Dorr, Margaret M Koletar, Tina L Beckett, Matthew W Rozak, John G Sled, and Bojana Stefanovic</p>
+                        
+                        <div class="pub-highlight-body">
+                            <div class="pub-highlight-abstract">
+                                <strong>Abstract:</strong> Neurovascular coupling (NVC), or the adjustment of blood flow in response to local neural activity, underpins functional neuroimaging. We simultaneously recorded neural and vascular activity across cortical layers and columns using Neuropixels probes and two-photon microscopy during focal optogenetic stimulation. Our results reveal that the microvascular network response extends well beyond the zone of direct neural activation, with vessel-level hemodynamics shaped by the topology of the surrounding network.
+                            </div>
+                        </div>
+                        <a href="https://doi.org/10.1016/j.neuroimage.2024.120512" target="_blank" class="btn btn-secondary btn-sm">Read Online</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Searchable Publications Database -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="publications.all">All Publications</h2>
+                </div>
+
+                <div class="pub-filters-bar">
+                    <div class="search-wrapper">
+                        <input type="text" id="pub-search" placeholder="Search publications..." data-i18n-placeholder="publications.search">
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="pub-filter">
+                            <option value="" data-i18n="publications.filterYear">Filter by year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="pub-year-tabs" class="pub-year-tabs"></div>
+
+                <!-- Dynamically loaded list -->
+                <div class="publications-wrapper" id="publications-list">
+                    <div class="loading-spinner">Chargement des publications…</div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Bojana+Stefanovic" target="_blank" class="btn btn-primary">Liste complète sur PubMed &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conferences & Societies Header -->
+        <section class="section" style="background-image: linear-gradient(rgba(250, 246, 240, 0.9), rgba(250, 246, 240, 0.9)), url('images/publications/societies-header.jpg'); background-size: cover; background-position: center; border-top: 2px solid var(--color-bg-alt);">
+            <div class="container" style="text-align: center;">
+                <h2>Sociétés et conférences</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--color-text-muted);">Nous sommes des membres actifs de grandes sociétés internationales de bio-imagerie et de neurosciences.</p>
+                <a href="conferences.html" class="btn btn-secondary">Voir les affiliations</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p><span data-i18n="footer.address">Institut de recherche Sunnybrook</span><br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <p><a href="recherche.html" data-i18n="nav.research">Research</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.connect">Nous joindre</h4>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    <p><a href="../feed.xml" class="rss-link"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS Feed</a></p>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/publications.js"></script>
+    <script src="../js/neural-bg.js"></script>
+<script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
+</body>
+</html>

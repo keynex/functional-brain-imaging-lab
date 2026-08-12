@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Functional Brain Imaging Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Research areas and projects at the Functional Brain Imaging Lab.">
+
+    <link rel="icon" href="images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Research | Functional Brain Imaging Lab">
+    <meta property="og:description" content="Research areas and projects at the Functional Brain Imaging Lab.">
+    <meta property="og:image" content="https://brainimaginlab.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="alternate" type="application/rss+xml" title="fBIL News" href="feed.xml">
+    <meta name="view-transition" content="same-origin">
+</head>
+<body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
+    <div id="preloader">
+        <img src="images/logo.gif" alt="Loading..." class="preloader-logo">
+        <span class="preloader-text">Loading</span>
+    </div>
+    <div id="scroll-progress"></div>
+    <div class="noise-overlay"></div>
+    <div id="mouse-spotlight"></div>
+    <canvas id="neural-bg"></canvas>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.gif" alt="fBIL" class="logo-img">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="people.html" data-i18n="nav.people">People</a>
+                <a href="research.html" class="active" data-i18n="nav.research">Research</a>
+                <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                <a href="facilities.html" data-i18n="nav.facilities">Facilities</a>
+                <a href="news.html" data-i18n="nav.news">News</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joinus.html" data-i18n="nav.joinus">Join Us</a>
+                <a href="fr/recherche.html" class="lang-toggle">FR</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Header -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/projects/cleared-perfused-mouse.png'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
+            <div class="container">
+                <h1 style="color: white; margin-bottom: 1rem;">Our Research Projects</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Investigating cellular mechanics and macroscopic signals in Alzheimer's, stroke, and concussions.</p>
+            </div>
+        </section>
+
+        <!-- Projects Sections -->
+        <section class="section">
+            <div class="container">
+                
+                <!-- Project 1 -->
+                <div class="project-detail-section" style="margin-bottom: 6rem;">
+                    <div style="border-bottom: 2px solid var(--color-primary); padding-bottom: 1rem; margin-bottom: 2rem;">
+                        <span class="tagline">Project 01</span>
+                        <h2>Examining the Consequences of Concussions</h2>
+                    </div>
+                    
+                    <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
+                        <div class="project-text">
+                            <p>Traumatic Brain Injury (TBI) and concussions are pervasive in their negative effects on the brain throughout many demographics. It has been shown that even minor injuries to the brain (mild TBI), either singular or repeated, can cause far-reaching neurological deficits in patients. However, the biological mechanisms leading to neurophysiological and morphological changes are not well understood.</p>
+                            <p>In this project, we are characterizing the functional deficits seen in the brain following repeated mild TBI. Using a closed-head injury model, we have described the effects of this injury in the cortex in mice using BOLD and ASL fMRI to characterize compromised cerebrovascular function alongside electrophysiological recordings of cortical neurons. Recently, our lab has examined these effects at a finer scale using two-photon fluorescence microscopy, in which we utilized optogenetic techniques to obtain vascular and neuronal responses of excitation volumes on the order of single vessels. Our goal with this work is to assess the mechanism mild injuries have on the brain.</p>
+                            
+                            <div class="team-involved" style="margin-top: 2rem;">
+                                <strong>Team Members Involved:</strong>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <span class="badge">James</span>
+                                    <span class="badge">Adrienne</span>
+                                    <span class="badge">Andrew</span>
+                                    <span class="badge">Tina</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
+                            <figure class="project-figure">
+                                <img src="images/projects/tbi-mouse-pericyte-3d.jpg" alt="TBI Mouse Pericytes 3D" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon microscopy XYZ stack of cortical vasculature (red, Alexa 680) and capillary pericytes (white, NeuroTrace 500/525) in the TBI mouse model.</figcaption>
+                            </figure>
+                            <figure class="project-figure">
+                                <img src="images/projects/cleared-perfused-mouse.png" alt="Cleared Mouse Brain" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon microscopy XYZ stack of a chemically cleared transgenic mouse brain expressing tdTomato (red) on endothelial cells and perfused with FITC (yellow-green) in the vascular lumen.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: var(--color-bg-alt); margin: 4rem 0;">
+
+                <!-- Project 2 -->
+                <div class="project-detail-section" style="margin-bottom: 6rem;">
+                    <div style="border-bottom: 2px solid var(--color-secondary); padding-bottom: 1rem; margin-bottom: 2rem;">
+                        <span class="tagline">Project 02</span>
+                        <h2>Metabolic Profiling of Alzheimer's Disease</h2>
+                    </div>
+                    
+                    <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
+                        <div class="project-text">
+                            <p>The brain’s demand for energy is disproportionately large for its size, accentuating the importance of robust microvascular function to compensate for the dynamic range of energy demands the neuronal network has for normal brain function. In fact, various forms of neurodegeneration that exhibit progressive decline in brain function can be associated with alterations in microvascular function and metabolism.</p>
+                            <p>At the Functional Brain Imaging Lab (fBIL), we utilize a rat model of Alzheimer’s disease (the TgF344-AD rat: TgAD) to further our understanding of how different aspects of brain function and underlying mechanisms are altered. Emerging evidence in both AD patients and animal models shows alterations in metabolic pathways in the presymptomatic stage of AD. Characterizing changes in metabolic pathways prior to manifestation of cognitive deficits in our rat model serves the purpose of identifying early biomarkers of AD and completing our understanding of AD pathology before the onset of clinical symptoms.</p>
+                            <p>Our goal is to establish metabolic alterations in the hippocampus and entorhinal cortex of TgAD rats during their presymptomatic disease stage. Here, brain metabolism is assessed by glucose uptake and ketone metabolism using MRI Chemical Exchange Saturation Transfer (CEST) and MR spectroscopy, respectively. Additionally, the imaging protocol devised for this study enables repeated scans at higher spatial and temporal resolution.</p>
+                            
+                            <div class="team-involved" style="margin-top: 2rem;">
+                                <strong>Team Members Involved:</strong>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <span class="badge">Lewis</span>
+                                    <span class="badge">Tina</span>
+                                    <span class="badge">Paolo</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
+                            <figure class="project-figure">
+                                <img src="images/projects/cest-glucose.png" alt="CEST Glucose Uptake" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimated glucose uptake using CEST contrast with the preclinical 7T MR system. Presymptomatic TgAD rats show significantly attenuated hippocampal glucose uptake compared to nTg rats.</figcaption>
+                            </figure>
+                            <figure class="project-figure">
+                                <img src="images/projects/mrs-signal.png" alt="MRS Spectroscopy Data" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Estimation of hippocampal metabolite concentration in presymptomatic TgAD rats. Modelling single-voxel spectroscopy data (black) with individual basis sets (pink) enables precise quantification.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: var(--color-bg-alt); margin: 4rem 0;">
+
+                <!-- Project 3 -->
+                <div class="project-detail-section" style="margin-bottom: 4rem;">
+                    <div style="border-bottom: 2px solid var(--color-tertiary); padding-bottom: 1rem; margin-bottom: 2rem;">
+                        <span class="tagline">Project 03</span>
+                        <h2>The Neurovascular Unit in Stroke Recovery</h2>
+                    </div>
+                    
+                    <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: start;">
+                        <div class="project-text">
+                            <p>Most stroke survivors suffer moderate to severe long-term functional deficits despite the treatment availability of tissue plasminogen activator and endovascular thrombectomy. Potentiating the beneficial effects of rehabilitation therapy in the chronic stage of stroke thus remains a major clinical challenge. We study the acute neurovascular sequelae following focal cortical ischemia to design better tools to promote long term recovery.</p>
+                            <p>To this end, we use multi-scale and multi-modal imaging (MRI, fUS, 2PLSM and PET) and electrophysiology (laminar and multi electrode arrays) to study the long term benefits of treatments on neurovascular recovery following stroke. By imaging neuronal and vascular collapse <em>in real time</em> before, during, and after ischemia, we can examine the efficacy of different therapeutic approaches on neurovascular coupling and use Machine Learning to build models that predict the trajectory of the recovery.</p>
+                            
+                            <div class="team-involved" style="margin-top: 2rem;">
+                                <strong>Team Members Involved:</strong>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <span class="badge">Paolo</span>
+                                    <span class="badge">Johnson</span>
+                                    <span class="badge">Jamie</span>
+                                    <span class="badge">Margaret</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-gallery" style="display: flex; flex-direction: column; gap: 2rem;">
+                            <figure class="project-figure">
+                                <img src="images/projects/stroke-et1-collapse.png" alt="Two-Photon Stroke Collapse" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Two-photon fluorescence microscopy of cortical vasculature surrounding the vasoconstrictor injection site showing propagation of vessel collapse (red arrows: arteries, blue arrows: veins).</figcaption>
+                            </figure>
+                            <figure class="project-figure">
+                                <img src="images/projects/stroke-activity-map.png" alt="Stroke Activity Map" style="width: 100%; border-radius: var(--border-radius-md); box-shadow: var(--shadow-md);">
+                                <figcaption style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.5rem; line-height: 1.4;">Activity map for stroke murine neurovasculature. The colour gradient depicts relative activity percentages for individual vessels over the 20 second acquisition period.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p>Sunnybrook Research Institute<br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="research.html" data-i18n="nav.research">Research</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="joinus.html" data-i18n="nav.joinus">Join Us</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    <p><a href="feed.xml" class="rss-link"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS Feed</a></p>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Functional Brain Imaging Lab. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
+    <script src="js/i18n.js"></script>
+    <script src="js/neural-bg.js"></script>
+<script src="js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="js/search.js"></script>
+</body>
+</html>

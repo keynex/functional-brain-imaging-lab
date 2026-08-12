@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociétés et conférences | Laboratoire d'imagerie cérébrale fonctionnelle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Sociétés scientifiques et conférences affiliées au Laboratoire d'imagerie cérébrale fonctionnelle.">
+
+    <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Sociétés et conférences | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Sociétés scientifiques et conférences affiliées au Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://brainimaginlab.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="alternate" type="application/rss+xml" title="fBIL News" href="../feed.xml">
+    <meta name="view-transition" content="same-origin">
+</head>
+<body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
+    <div id="preloader">
+        <img src="../images/logo.gif" alt="Loading..." class="preloader-logo">
+        <span class="preloader-text">Loading</span>
+    </div>
+    <div id="scroll-progress"></div>
+    <div class="noise-overlay"></div>
+    <div id="mouse-spotlight"></div>
+    <canvas id="neural-bg"></canvas>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.gif" alt="fBIL" class="logo-img">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Basculer la navigation"><span></span><span></span><span></span></button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="equipe.html" data-i18n="nav.people">People</a>
+                <a href="recherche.html" data-i18n="nav.research">Research</a>
+                <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                <a href="installations.html" data-i18n="nav.facilities">Facilities</a>
+                <a href="nouvelles.html" data-i18n="nav.news">News</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a>
+                <a href="../conferences.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero" style="background-image: linear-gradient(rgba(38, 70, 83, 0.85), rgba(38, 70, 83, 0.85)), url('images/publications/societies-header.jpg'); background-size: cover; background-position: center; color: white; padding: 6rem 0; text-align: center;">
+            <div class="container">
+                <h1 style="color: white; margin-bottom: 1rem;">Sociétés et conférences</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-bg);">Nous participons activement aux communautés internationales des sciences du cerveau et de l'imagerie biomédicale.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    
+                    <!-- AAIC -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/aaic.jpg" alt="AAIC Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>Alzheimer’s Association International Conference (AAIC)</h3>
+                            <p>L'AAIC réunit des chercheurs, cliniciens et spécialistes des soins du monde entier pour discuter des dernières études, théories et découvertes qui contribueront aux avancées dans la science de la démence.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://www.alz.org/" target="_blank" class="btn btn-secondary btn-sm">Assoc. Alzheimer</a>
+                            <a href="https://www.alz.org/aaic/overview.asp" target="_blank" class="btn btn-secondary btn-sm">Info AAIC</a>
+                        </div>
+                    </div>
+
+                    <!-- ADPD Focus -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/adpd_focus.png" alt="AAT-AD/PD Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>AAT-AD/PD Focus Meeting</h3>
+                            <p>La réunion de mise au point sur les avancées dans les thérapies de la maladie d'Alzheimer et de Parkinson présente les dernières percées en matière de traitement, de R-D translationnelle, de diagnostic précoce, de développement de médicaments et d'essais cliniques.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://aat-adpd.kenes.com/" target="_blank" class="btn btn-secondary btn-sm">Site de la conférence</a>
+                        </div>
+                    </div>
+
+                    <!-- AHA -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/aha.png" alt="AHA Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>American Heart Association’s International Stroke Conference</h3>
+                            <p>La première réunion mondiale dédiée à la science et au traitement des maladies cérébrovasculaires. Les sujets portent sur la récupération après un AVC, les troubles cognitifs vasculaires, les mécanismes expérimentaux et les essais cliniques en cours.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://www.heart.org/" target="_blank" class="btn btn-secondary btn-sm">AHA Home</a>
+                            <a href="https://professional.heart.org/professional/EducationMeetings/MeetingsLiveCME/InternationalStrokeConference/UCM_316901_International-Stroke-Conference.jsp" target="_blank" class="btn btn-secondary btn-sm">Stroke Conf</a>
+                        </div>
+                    </div>
+
+                    <!-- Experimental Biology -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/eb.jpg" alt="EB Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>Experimental Biology (EB)</h3>
+                            <p>La réunion annuelle de cinq sociétés regroupant plus de 12 000 scientifiques en une communauté interdisciplinaire. Un carrefour pour explorer l'anatomie, la biochimie, la pathologie expérimentale, la pharmacologie et la physiologie.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://experimentalbiology.org/" target="_blank" class="btn btn-secondary btn-sm">Site EB</a>
+                        </div>
+                    </div>
+
+                    <!-- ESM -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/esm.jpg" alt="ESM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>European Society for Microcirculation</h3>
+                            <p>Vise à faire progresser la compréhension de la microcirculation en réunissant cliniciens et scientifiques de la physiologie, de la biologie vasculaire, de la génétique et de la biophysique pour le Congrès mondial de microcirculation.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="http://www2.szote.u-szeged.hu/esm/" target="_blank" class="btn btn-secondary btn-sm">Société</a>
+                            <a href="http://www2.szote.u-szeged.hu/esm/index.php/news-events/84-world-congress-for-microcirculation-2022" target="_blank" class="btn btn-secondary btn-sm">Congrès mondial</a>
+                        </div>
+                    </div>
+
+                    <!-- GRC -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/grc.jpg" alt="GRC Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>Gordon Research Conference</h3>
+                            <p>Offre un forum international pour la présentation et la discussion de la recherche de pointe dans les sciences biologiques, chimiques, physiques et du génie, et leurs interfaces.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://www.grc.org/" target="_blank" class="btn btn-secondary btn-sm">Gordon Conferences</a>
+                        </div>
+                    </div>
+
+                    <!-- AD/PD -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/adpd.jpg" alt="AD/PD Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>International Conference on Alzheimer’s & Parkinson’s Diseases (AD/PD)</h3>
+                            <p>Cette conférence est à l'avant-garde de l'élucidation des mécanismes et de l'amélioration du traitement de la maladie d'Alzheimer, de Parkinson et d'autres maladies neurodégénératives apparentées.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://adpd.kenes.com/" target="_blank" class="btn btn-secondary btn-sm">AD/PD Website</a>
+                        </div>
+                    </div>
+
+                    <!-- ISCBFM -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/iscbfm.jpg" alt="ISCBFM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>ISCBFM: Brain & Brain PET Meeting</h3>
+                            <p>Promeut la recherche sur le débit sanguin cérébral, le métabolisme et la fonction cérébrale dans les états physiologiques et physiopathologiques, allant de la dynamique moléculaire à la neuroimagerie clinique par TEP.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://www.iscbfm.org/" target="_blank" class="btn btn-secondary btn-sm">ISCBFM Home</a>
+                            <a href="http://brain2021.scot/" target="_blank" class="btn btn-secondary btn-sm">Brain PET</a>
+                        </div>
+                    </div>
+
+                    <!-- ISMRM -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/ismrm.jpg" alt="ISMRM Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>International Society for Magnetic Resonance in Medicine (ISMRM)</h3>
+                            <p>Une association multidisciplinaire qui promeut l'innovation, le développement et l'application des techniques de résonance magnétique en médecine et en biologie dans le monde entier.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://www.ismrm.org/" target="_blank" class="btn btn-secondary btn-sm">ISMRM Portal</a>
+                        </div>
+                    </div>
+
+                    <!-- VAS-COG -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/vascog.png" alt="VAS-COG Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>The International Society of Vascular Behavioural and Cognitive Disorders (VAS-COG)</h3>
+                            <p>Examine les facteurs vasculaires liés aux lésions et dysfonctions cérébrales à travers les symptômes psychiatriques, psychologiques, cognitifs et fonctionnels.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://www.vas-cog.com/" target="_blank" class="btn btn-secondary btn-sm">VAS-COG Website</a>
+                        </div>
+                    </div>
+
+                    <!-- SPIE -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/spie.jpg" alt="SPIE Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>SPIE Photonics West</h3>
+                            <p>L'événement de premier plan pour les communautés de la photonique et du laser, présentant des systèmes laser, des dispositifs optiques et des configurations d'imagerie biophotonique (dont les microscopes biphotoniques).</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://spie.org/" target="_blank" class="btn btn-secondary btn-sm">SPIE Home</a>
+                            <a href="https://spie.org/conferences-and-exhibitions/photonics-west" target="_blank" class="btn btn-secondary btn-sm">Photonics West</a>
+                        </div>
+                    </div>
+
+                    <!-- SfN -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/sfn.jpg" alt="SfN Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>Society for Neuroscience (SfN) Annual Meeting</h3>
+                            <p>Le lieu de prédilection des neuroscientifiques pour présenter les sciences émergentes du cerveau, forger des collaborations, explorer de nouveaux outils et technologies, et faire progresser les carrières scientifiques.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://www.sfn.org/" target="_blank" class="btn btn-secondary btn-sm">SfN Home</a>
+                            <a href="https://www.sfn.org/meetings/neuroscience-2020" target="_blank" class="btn btn-secondary btn-sm">Neuroscience</a>
+                        </div>
+                    </div>
+
+                    <!-- WSO -->
+                    <div class="card conference-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="conference-logo-wrapper" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: var(--color-bg); border-radius: var(--border-radius-md); padding: 1rem;">
+                                <img src="../images/conferences/wso.jpg" alt="WSO Logo" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            </div>
+                            <h3>World Stroke Organization (WSO): World Stroke Congress</h3>
+                            <p>Attire plus de 2 500 spécialistes cliniques et chercheurs en AVC pour présenter des essais cliniques, des lignes directrices et de nouveaux mécanismes expérimentaux pour la récupération vasculaire.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                            <a href="https://www.world-stroke.org/" target="_blank" class="btn btn-secondary btn-sm">WSO Home</a>
+                            <a href="https://www.world-stroke.org/what-we-do/uniting-the-stroke-community/world-stroke-congress" target="_blank" class="btn btn-secondary btn-sm">Congress</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p><span data-i18n="footer.address">Institut de recherche Sunnybrook</span><br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <p><a href="recherche.html" data-i18n="nav.research">Research</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Join Us</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.connect">Nous joindre</h4>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    <p><a href="../feed.xml" class="rss-link"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS Feed</a></p>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/neural-bg.js"></script>
+<script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
+</body>
+</html>

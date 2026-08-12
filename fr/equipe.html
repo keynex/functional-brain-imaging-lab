@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe | Laboratoire d'imagerie cérébrale fonctionnelle</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Rencontrez l'équipe du Laboratoire d'imagerie cérébrale fonctionnelle.">
+
+    <link rel="icon" href="../images/logo.gif" type="image/gif">
+
+    <meta property="og:title" content="Équipe | Laboratoire d'imagerie cérébrale fonctionnelle">
+    <meta property="og:description" content="Rencontrez l'équipe du Laboratoire d'imagerie cérébrale fonctionnelle.">
+    <meta property="og:image" content="https://brainimaginlab.github.io/functional-brain-imaging-lab/images/logo.gif">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="alternate" type="application/rss+xml" title="fBIL News" href="../feed.xml">
+    <meta name="view-transition" content="same-origin">
+</head>
+<body>
+    <a href="#main-content" id="skip-to-content">Skip to content</a>
+    <div id="preloader">
+        <img src="../images/logo.gif" alt="Loading..." class="preloader-logo">
+        <span class="preloader-text">Loading</span>
+    </div>
+    <div id="scroll-progress"></div>
+    <div class="noise-overlay"></div>
+    <div id="mouse-spotlight"></div>
+    <canvas id="neural-bg"></canvas>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="../images/logo.gif" alt="fBIL" class="logo-img">
+                <span class="logo-accent">Brain</span>Imaging Lab
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Basculer la navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="nav.home">Accueil</a>
+                <a href="equipe.html" class="active" data-i18n="nav.people">Équipe</a>
+                <a href="recherche.html" data-i18n="nav.research">Recherche</a>
+                <a href="publications.html" data-i18n="nav.publications">Publications</a>
+                <a href="installations.html" data-i18n="nav.facilities">Installations</a>
+                <a href="nouvelles.html" data-i18n="nav.news">Nouvelles</a>
+                <a href="toronto.html" data-i18n="nav.toronto">Toronto</a>
+                <a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a>
+                <a href="../people.html" class="lang-toggle">EN</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark mode">☀️</button>
+                <button id="search-trigger" aria-label="Search site">🔍</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="people.title">Notre Équipe</h2>
+                </div>
+                
+                <div class="card-grid" id="current-members">
+                    <!-- Placeholder for JS rendered members -->
+                </div>
+                
+                <h3 style="margin-top: 4rem; margin-bottom: 2rem;" data-i18n="people.alumni">Anciens membres</h3>
+                <div class="card-grid" id="alumni-members">
+                    <!-- Placeholder for alumni -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Brain Imaging Lab</h4>
+                    <p><span data-i18n="footer.address">Institut de recherche Sunnybrook</span><br>
+                    2075 Bayview Avenue<br>
+                    Toronto, ON M4N 3M5<br>
+                    Canada</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quickLinks">Liens rapides</h4>
+                    <p><a href="recherche.html" data-i18n="nav.research">Recherche</a></p>
+                    <p><a href="publications.html" data-i18n="nav.publications">Publications</a></p>
+                    <p><a href="toronto.html" data-i18n="nav.toronto">Toronto</a></p>
+                    <p><a href="joignez-vous.html" data-i18n="nav.joinus">Joignez-vous</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.connect">Nous joindre</h4>
+                    <p><a href="https://scholar.google.ca/citations?user=we7sTzwAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+                    <p><a href="../feed.xml" class="rss-link"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg> RSS Feed</a></p>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 <span data-i18n="footer.copyright">Laboratoire d'imagerie cérébrale fonctionnelle. Tous droits réservés.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top">↑</button>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/people.js"></script>
+    <script src="../js/neural-bg.js"></script>
+<script src="../js/animations.js"></script>
+
+    <div id="search-overlay">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search people, publications, pages... (Ctrl+K)">
+            <div class="search-results"></div>
+        </div>
+    </div>
+<script src="../js/search.js"></script>
+</body>
+</html>
